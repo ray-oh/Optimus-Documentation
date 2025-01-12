@@ -1,12 +1,26 @@
-# OPTIMUS
-RPA solution with **Excel front end** for creating flows.  
-Designed with the typical data analyst who is not technical savy but comfortable using Excel in mind.  
-The solution makes it really **easy for beginners** to develop your own flows, especially with templates.  
-Users can easily share and reuse modular Excel based scripts to speed up flow creation or create sophisticated automation flows.  
+# ABOUT OPTIMUS  
+Optimus is an RPA (Robotic Process Automation) solution designed with an **Excel front end** for designing automation flow steps.  
+Making it accessible for the typical data analyst who is comfortable using Excel, but not very technical savy.    
 
-![logo](https://user-images.githubusercontent.com/115925194/210501100-910d4f94-10cd-428a-980a-c2984a7ed739.png)   
-[Demo of Optimus RPA completing the RPA Challenge in under 10 seconds](https://www.youtube.com/watch?v=BWfCpwz76io)   
-![Sample Optimus script](https://user-images.githubusercontent.com/115925194/210494451-2b3fc373-04a0-4a5e-860e-73921fd89340.png)
+Optimus stands out for its user-friendly approach while maintaining robust features and extensibility:  
+
+1. **Ease of Use**: Optimus simplifies the creation of automation flows using Excel and predefined templates.  
+2. **TagUI and Microsoft Playwright Integration**: Choice of TagUI or Microsoft Playwright RPA engine.  Known for their rich scripting language and support for web browser automation.  
+3. **Prefect Workflow Engine**: Provides powerful orchestration, management, and monitoring of workflows.  
+4. **Python-Based**: Developed in Python, allowing access to a wide range of libraries and integration with Jupyter Notebooks.  
+5. **Enterprise-Level Security**: Secure by design, running on-premise and managing passwords locally, ensuring no sensitive data is sent to the cloud.  
+
+## DEMO of OPTIMUS RPA  
+![logo](https://user-images.githubusercontent.com/115925194/210501100-910d4f94-10cd-428a-980a-c2984a7ed739.png)  
+Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
+Action was defined by less than 10 steps of actions defined in following Excel script:  
+![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
+This Excel script demonstrates a few key features of the OPTIMUS automation language:  
+- **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.
+- **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.
+- **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.
+- **variables and tables**: rich user defined parameters to support complex automation flows. 
+The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## COMPARISON WITH OTHER RPA SOLUTIONS
 OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility.  
