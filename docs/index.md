@@ -16,10 +16,10 @@ Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [
 Action was defined by less than 10 steps of actions defined in following Excel script:  
 ![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
 This Excel script demonstrates a few key features of the OPTIMUS automation language:  
-- **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.
-- **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.
-- **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.
-- **variables and tables**: rich user defined parameters to support complex automation flows. 
+- **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.  
+- **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
+- **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
+- **variables and tables**: rich user defined parameters to support complex automation flows.  
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## COMPARISON WITH OTHER RPA SOLUTIONS
