@@ -15,22 +15,23 @@ Optimus stands out for its user-friendly approach while maintaining robust featu
 Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
 Action was defined by less than 10 steps of actions defined in following Excel script:  
 ![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
-This Excel script demonstrates a few key features of the OPTIMUS automation language:  
-1. **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.
+This Excel script demonstrates a few key features and versatility of the OPTIMUS automation language:  
+1. **keyword-driven**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.  
 2. **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
 3. **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
-4. **variables and tables**: rich user defined parameters to support complex automation flows.  
+4. **variables and tables**: rich user defined parameters to support complex automation flows.
+5. **extensibility**:  combine OPTIMUS commands with Excel formulas and macros for more complex actions. Or extend OPTIMUS commands with user defined libraries.  
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## COMPARISON WITH OTHER RPA SOLUTIONS
 OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility. But at the sametime, it does not compromise on features and capabilities.
 
 OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
-1. Keyword-Driven: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.
-2. Extensibility: supports extensions through libraries written in Python. This allows you to integrate with various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.
-3. Versatile Syntax: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.
-4. Reporting and Logs: generates detailed reports and logs to help analyze automation results and debug issues effectively.
-5. Enterprise Level Security:  solution is installed locally, and user has full control on how his/her data is stored and managed.
+1. **Keyword-Driven**: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.  
+2. **Extensibility**: supports extensions through libraries written in Python. This allows you to integrate with various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.  
+3. **Versatile Syntax**: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.  
+4. **Reporting and Logs**: generates detailed reports and logs to help analyze automation results and debug issues effectively.  
+5. **Enterprise Level Security**:  solution is installed locally, and user has full control on how his/her data is stored and managed.  
 
 A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose).  
 
@@ -55,23 +56,15 @@ Other example use cases:
 Refer to the DOCUMENTATION section below for further technical information on the solution.  
 
 ## INSTALLATION
-2 methods to install and use optimus RPA:
-1. Git clone this repo
-    - From this Github page (https://github.com/ray-oh/Optimus.git) - click *Code* and *Download ZIP*  
-      ![download the zipped package](https://user-images.githubusercontent.com/115925194/212074132-7e504cc0-d24c-4262-b9cf-e5734f7c827e.png)
-    - Create a folder for your Optimus program.  And extract the content to the folder  
-      ![image](https://user-images.githubusercontent.com/115925194/212080421-f3b20b76-4f13-4dce-9950-6f6946b7d808.png)
-    - Multiple copies of Optimus program can be installed one a computer.  Typically, you could have one instance for PRODUCTION and another instance for TESTING / QUALITY ASSURANCE.  For the PRODUCTION instance, it is recommended to use the name `Optimus` for the program directory.  And for testing, you could give a name like `Optimus_QA`.  If you were setting the TEST/QA environment, it should look like the following with the zipped file content extracted:    
-      ![image](https://user-images.githubusercontent.com/115925194/212081617-9c9cb96f-8fd2-43c3-8c9a-b2133d78ed02.png)
-    - Finally, run the `install.bat` to setup required libraries for TagUI, PREFECT, JUPYTER NOTEBOOK etc.
-2. Install from zipped package file
-    - Requires: `install.bat` and a `optimus_package*.zip` file.
-    - optimus_package is in continuous release and new releases are versioned in YYYYMMDD format.
-      It is advisable you use the latest version available which should be in the *installation* folder.  Check the release notes on what is included in the version.
-    - Each new release can also be installed over a previous release as an upgrade.  
-      Normally, an upgrade installation will not remove existing user files.  But it may overwrite existing scripts files with same name.
-      Backup your scripts folder to avoid problems.
-    - Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
+Get the latest release of OPTIMUS from the [installation repository](https://github.com/ray-oh/Optimus-Installation/releases).  
+Install from zipped package file
+- Requires: `install.bat` and a `optimus_package*.zip` file.
+- optimus_package is in continuous release and new releases are versioned in YYYYMMDD format.
+It is advisable you use the latest version available which should be in the *installation* folder.  Check the release notes on what is included in the version.
+- Each new release can also be installed over a previous release as an upgrade.  
+Normally, an upgrade installation will not remove existing user files.  But it may overwrite existing scripts files with same name.
+Backup your scripts folder to avoid problems.
+- Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
 
 # PROGRAM TECHNICAL INFORMATION
 Pre-requisites:
@@ -119,13 +112,56 @@ All other program libraries will be installed automatically by the installation 
   - Refer to the documentation here for more details on [managing automation flows and deployments in the workflow dashboard](./docs/ORCHESTRATION.md).
 
 ## Documentation
+### OPTIMUS Studio
+OPTIMUS Studio is a GUI front end for operation of OPTIMUS RPA.  
+![Optimus RPA GUI](https://github.com/user-attachments/assets/8d6571ea-bee5-4a8b-8857-da885df14948)  
+Some of the cool features include:  
+1. Run automation scripts - with support for interactive and record mode, that allows recording of automation steps.  
+2. Recording - video of automation run.
+3. Notifications - via Telegram.
+4. Remote services - launch automation flows on your robot remotely via Telegram.
+5. Quick Patch - to update OPTIMUS with latest functionality and release.  
+Refer here for details on use of OPTIMUS Studio.  
+
+### Library of Automation Commands
+| Library | Description | Commands |
+|----------|----------|----------|
+| Studio | GUI for OPTIMUS | Row 1, Col 3 |
+| BuiltIn | Standard library with command commands | rem, print, if, exit, exitError, raiseError, checkVariable, set|
+| Browser_playwright | Microsoft Playwright | click, rclick, hover, present, exist, closeRPA, url, initializeRPA, wait for url, wait |
+| Browser_tagui | TagUI support | click, rclick, hover, present, exist, closeRPA, url, title, select, snap, telegram, download, upload |
+| Python | Run Python scripts | runJupyterNb |
+| Flows | Flow processing logic | iterate, arguments, runModule, codeList |
+| Email_Exchange | Email processing | email, waitEmailComplete, refreshMail |
+| LibraryTemplate | Template for user defined libraries |  |
+
+
+
+DataFrame
+
+Excel
+FileSystem
+Formulas
+Github
+Image
+
+PDF
+Prefect
+
+Table
+Vault
+Windows
+
+
+
 OPTIMUS is based on TagUI for RPA automation.  Almost all of TagUI's features are ported and available in Optimus.  And some have also been enhanced.
 - As many of OPTIMUS core RPA functionality is based on TagUI, a good reference on the core RPA functionality is available from the TagUI official sites, in particular:
   - [Official TagUI site](https://aisingapore.org/tagui/) and [the python version of TagUI](https://github.com/tebelorg/RPA-Python)
   - The list of keywords and commands currently supported by OPTIMUS Excel script can be [referenced from here](./docs/scriptKeywords.xlsx).
   > TagUI by design does not deploy or save any user data on the cloud.  Passwords or credentials are not saved in the scripts, but cached in the browser or secret files on the user's local computer.  
 
-OPTIMUS also natively leverages many other python packages for additional features, including:
+## References to other libraries used by OPTIMUS:
+OPTIMUS natively leverages many other python packages for additional features, including:
 - [Jupyter](https://pypi.org/project/jupyter/): Native support for Jupyter Notebooks  
   - [Installing Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html)  
   - [Setup Jupyter to use installed virtual env](https://janakiev.com/blog/jupyter-virtual-envs/)  
@@ -151,7 +187,6 @@ OPTIMUS also natively leverages many other python packages for additional featur
 There are some on-going enhancements of OPTIMUS that have yet to be fully incorporated into the solution.  Please contact the developer for further details:
 - integrate [data exploration tools like mitos, DTale, Lux](https://github.com/ray-oh/Optimus/blob/master/docs/DATA_EXPLORATION.md).  These are tools that simplify working with Pandas by offering a GUI front end.  
 - components that allow further [scaling of the solution to handle big data e.g > 10TB without resorting to Spark](https://github.com/ray-oh/Optimus/blob/master/docs/SCALING.md)  
-- building a GUI front end for writing OPTIMUS RPA commands  
 
 ## CLONING REPO, CONTRIBUTION AND LICENSE
 
