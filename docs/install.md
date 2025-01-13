@@ -1,4 +1,4 @@
-### INSTALLATION
+# Intallation
 2 methods to install and use optimus RPA:
 1. Git clone this repo
     - From this Github page (https://github.com/ray-oh/Optimus.git) - click *Code* and *Download ZIP*  
@@ -16,7 +16,7 @@
       Normally, an upgrade installation will not remove existing user files.  But it may overwrite existing scripts files with same name.
       Backup your scripts folder to avoid problems.
     - Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
-#### Installation issues
+## Installation issues
 - [SQLite ‘no such table: json_each’](https://github.com/PrefectHQ/prefect/issues/5970) - potential issue with python / SQLite version.  Ensure python version 3.9 or 3.10 is used.  
 ### Installation notes
 - On first run of after installation, expect some running time to download and setup TagUI (~200MB) 
