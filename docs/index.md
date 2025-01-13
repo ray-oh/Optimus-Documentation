@@ -1,6 +1,6 @@
 # ABOUT OPTIMUS  
 Optimus is an RPA (Robotic Process Automation) solution designed with an **Excel front end** for designing automation flow steps.  
-Making it accessible for the typical data analyst who is comfortable using Excel, but not very technical savy.    
+Making it accessible for the typical data analyst who is comfortable using Excel, but not very technical savy.  
 
 Optimus stands out for its user-friendly approach while maintaining robust features and extensibility:  
 
@@ -23,36 +23,38 @@ This Excel script demonstrates a few key features of the OPTIMUS automation lang
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## COMPARISON WITH OTHER RPA SOLUTIONS
-OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility.  
-But at the sametime, it does not compromise on features and capabilities.
+OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility. But at the sametime, it does not compromise on features and capabilities.
 
-At the core of OPTIMUS is the TagUI RPA engine.
-> ***TagUI*** is a multilayered and sophisticated tool with a rich scripting language that supports complete complex RPA instructions. The richness of TagUI's scripting language is a reason why its one of the top opensource RPA solutions at the moment for mid-level or advanced teams implementing RPA. Here is a review from Matthew David (Digital Leader at Accenture) on [comparison of TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose)  
+OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
+-  Keyword-Driven: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.
+-  Extensibility: supports extensions through libraries written in Python. This allows you to integrate with various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.
+-  Versatile Syntax: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.
+-  Reporting and Logs: generates detailed reports and logs to help analyze automation results and debug issues effectively.
+-  Enterprise Level Security:  solution is installed locally, and user has full control on how his/her data is stored and managed.
 
-> ***OPTIMUS*** enhances TagUI's ease of use with an Excel front end for creation of automation flows.  No special development tools are required - just basic Excel and keywords to define various automation steps.  
-The solution is also built with ***Enterprise Level Security*** by design due to the decentralized architecture of TagUI.  User has full control on how his/her data is stored and managed.
+A special call out to Ken Soh for his creation of TagUI, which was the inspirition for OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose).  
 
-The second core component of OPTIMUS is the PREFECT workflow engine
-> ***PREFECT*** is a *second-generation* open source orchestration platform that has been developed specifically with dataflow automation in mind.  It provides OPTIMUS with powerful and scalable capabilities for workflow orchestration, management and monitoring.
+The current version of OPTIMUS has been enhanced to use ***[Microsoft Playwright](https://playwright.dev/)*** as the web browser automation engine. Microsoft Playwright is a leading open-source framework designed for web browser automation and testing.  It is a modern successor to Selenium, and supports all modern browsers and automation in a number of programming languages.  With features like automatic waiting for elements and mobile web testing, Playwright takes web automation to another level of reliability and efficiency.  
 
-And finally, as OPTIMUS is developed in Python - *the language for data analytics* - you have easy access to the rich set of libraries that Python has to offer
-> ***Flexible and extensible architecture***. An example is the built in support for Jupyter Notebooks.  - Jupyter notebooks can be easily called and run from OPTIMUS with different parameters.  And can extend OPTIMUS capability through installation of additional python libraries for machine learning or data analysis.  
-And by design, OPTIMUS Excel front end is designed to easily allow modularisation and reuse of your automation flows.  Allowing creation of sophisticated and powerful automation flows.  
+And with the latest generation of OPTIMUS, you also get the full fleged orchestration platform for managing all your automation flows.  ***[PREFECT](https://www.prefect.io/)*** is a second-generation open source orchestration platform that has been developed specifically with dataflow automation in mind.  It provides OPTIMUS with powerful and scalable capabilities for workflow orchestration, management and monitoring.  
 
-***Typical data analytics and automation use case***
+And finally, as OPTIMUS is developed in Python - *the language for data analytics* - you have easy access to the rich set of libraries that Python has to offer.
+Including support for Jupyter Notebooks for automating data analysis and machine learning projects. You can directly call and run Jupyter Notebook scripts.  And you can easily parameterize the Jupyter Notebook scripts to run under various conditions.  
+
+## Typical automation use cases
+-  ***Support data report automation***.  Example of a typical architecture for a data automation project.  
 ![Typical data use case](https://user-images.githubusercontent.com/115925194/210479085-36019993-4048-47a5-a5ee-9baf6d3bffe9.png)
 
-
-Some example use cases implemented with OPTIMUS in enterprise setting:
-> - ***Generate email reports*** out of a legacy reporting solution.  The legacy system did not support email out of the box and also did not support scheduled download of data. Optimus was used to automate of data from the system in Excel, and further processing data and formatting the report before sending as an email to users.
-> - ***Automate and extend functionality of legacy Excel macro files***.  These files were originally designed for manual run and had plenty of business logic embedded.  The original business developer for the macro has left, and it was risky and would take time to rewrite the entire solution on another platform.  As volume increased, the Excel would take many hours to run on the users laptop. Optimus was used to automate the refresh of the Excel macro with minimal modification to the original macro apart from exposing some key parameter fields.  Entire automation was deployed to a VM on the cloud.  And results from the macro were further transformed for downstream analysis.
+Other example use cases:
+> - ***Generate email reports*** out of a legacy reporting solution.  The legacy system did not support email out of the box and also did not support scheduled download of data. Optimus can be used to automate download of data, processing data and formatting the report before sending as an email to users.
+> - ***Automate and extend functionality of legacy Excel macro files***.  These files were originally designed for manual run and had plenty of business logic embedded.  The original business developer for the macro has left, and it was risky and would take time to rewrite the entire solution on another platform.  As volume increased, the Excel would take many hours to run on the users laptop. Optimus was used to automate the refresh of the Excel macro with minimal modification to the original macro apart from exposing some key parameter fields.  Entire automation was deployed to a virtual machine on the cloud.  And results from the macro were further transformed for downstream analysis.
 > - ***Extract incident and support request data from serviceNow***.  Optimus was used to combine the different datasets into a harmonized data set for monitoring both incident and request trends. The transformed dataset is passed to PowerBI for interactive visualization by users.
 > - Automate the monitoring of a website for downtime and failure.  Setting thresholds to trigger alert via email or telegram messaging.
 > - Periodically checking a competitor website for pricing updates, and extracting the data to Excel for further analysis.
 
 Refer to the DOCUMENTATION section below for further technical information on the solution.  
 
-# INSTALLATION
+## INSTALLATION
 2 methods to install and use optimus RPA:
 1. Git clone this repo
     - From this Github page (https://github.com/ray-oh/Optimus.git) - click *Code* and *Download ZIP*  
