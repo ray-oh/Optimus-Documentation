@@ -2,11 +2,18 @@ site_name: Optimus Documentation
 site_url: https://rayoh.github.io/optimus-documentation/
 nav:
   - Home: index.md
-  - Install: install.md
-  - Usage:
-     - LIBRARIES.md
-  - Blog:
-     - blog/index.md
+  - Start: quickstart.md
+  - Basics:
+     - 'Installation': basics/install.md
+     - 'Launcher': basics/launcher.md
+     - 'Language Syntax': basics/language.md
+     - 'Orchestration': basics/orchestration.md
+     - 'Libraries': basics/libraries.md
+  - Advance:
+     - 'RPA': advance/RPA.md
+     - 'Scaling': advance/scaling.md     
+  - Others:
+     - 'One Drive': others/onedrive.md
 theme:
   name: material
   features:
