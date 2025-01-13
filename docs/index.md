@@ -10,7 +10,7 @@ Optimus stands out for its user-friendly approach while maintaining robust featu
 4. **Python-Based**: Developed in Python, allowing access to a wide range of libraries and integration with Jupyter Notebooks.  
 5. **Enterprise-Level Security**: Secure by design, running on-premise and managing passwords locally, ensuring no sensitive data is sent to the cloud.  
 
-## DEMO of OPTIMUS RPA  
+## Demo of OPTIMUS RPA  
 ![logo](https://user-images.githubusercontent.com/115925194/210501100-910d4f94-10cd-428a-980a-c2984a7ed739.png)  
 Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
 Action was defined by less than 10 steps of actions defined in following Excel script:  
@@ -23,7 +23,7 @@ This Excel script demonstrates a few key features and versatility of the OPTIMUS
 5. **extensibility**:  combine OPTIMUS commands with Excel formulas and macros for more complex actions. Or extend OPTIMUS commands with user defined libraries.  
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
-## COMPARISON WITH OTHER RPA SOLUTIONS
+## Comparison with other RPA solutions
 OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility. But at the sametime, it does not compromise on features and capabilities.
 
 OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
@@ -66,7 +66,7 @@ Normally, an upgrade installation will not remove existing user files.  But it m
 Backup your scripts folder to avoid problems.
 - Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
 
-# PROGRAM TECHNICAL INFORMATION
+### PROGRAM TECHNICAL INFORMATION
 Pre-requisites:
 - Windows 10 or Windows 10 Enterprise Server.
 > OPTIMUS currently does not have a cloud enabled service option.  But it is possible deploy OPTIMUS on a cloud virtual machine to run the automation in unattended mode.
@@ -218,5 +218,5 @@ Before removing any bug, or adding new contributions please do the following: **
 
 Licensed under the [BSD 3-Clause License](LICENSE) 
 
-# CONTACT
+## CONTACT
 Raymond Oh - for reporting of bugs, questions, requests etc
