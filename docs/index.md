@@ -16,23 +16,23 @@ Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [
 Action was defined by less than 10 steps of actions defined in following Excel script:  
 ![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
 This Excel script demonstrates a few key features of the OPTIMUS automation language:  
-- **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.  
-- **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
-- **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
-- **variables and tables**: rich user defined parameters to support complex automation flows.  
+1. **key word actions**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.
+2. **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
+3. **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
+4. **variables and tables**: rich user defined parameters to support complex automation flows.  
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## COMPARISON WITH OTHER RPA SOLUTIONS
 OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility. But at the sametime, it does not compromise on features and capabilities.
 
 OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
--  Keyword-Driven: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.
--  Extensibility: supports extensions through libraries written in Python. This allows you to integrate with various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.
--  Versatile Syntax: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.
--  Reporting and Logs: generates detailed reports and logs to help analyze automation results and debug issues effectively.
--  Enterprise Level Security:  solution is installed locally, and user has full control on how his/her data is stored and managed.
+1. Keyword-Driven: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.
+2. Extensibility: supports extensions through libraries written in Python. This allows you to integrate with various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.
+3. Versatile Syntax: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.
+4. Reporting and Logs: generates detailed reports and logs to help analyze automation results and debug issues effectively.
+5. Enterprise Level Security:  solution is installed locally, and user has full control on how his/her data is stored and managed.
 
-A special call out to Ken Soh for his creation of TagUI, which was the inspirition for OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose).  
+A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose).  
 
 The current version of OPTIMUS has been enhanced to use ***[Microsoft Playwright](https://playwright.dev/)*** as the web browser automation engine. Microsoft Playwright is a leading open-source framework designed for web browser automation and testing.  It is a modern successor to Selenium, and supports all modern browsers and automation in a number of programming languages.  With features like automatic waiting for elements and mobile web testing, Playwright takes web automation to another level of reliability and efficiency.  
 
@@ -107,7 +107,7 @@ All other program libraries will be installed automatically by the installation 
 #### Installation issues
 - [SQLite ‘no such table: json_each’](https://github.com/PrefectHQ/prefect/issues/5970) - potential issue with python / SQLite version.  Ensure python version 3.9 or 3.10 is used.  
 
-# USAGE
+## Usage
 - Use `runRPA.bat` to launch RPA program.  Requires to specify an Excel script file.
 - Example with Excel script file sample.xlsm :   >> `runRPA -f sample`  
 - Sample script files "sample" available to test various RPA functionality
@@ -118,7 +118,7 @@ All other program libraries will be installed automatically by the installation 
   - And open the [Prefect dashboard](http://127.0.0.1:4200) in your browser
   - Refer to the documentation here for more details on [managing automation flows and deployments in the workflow dashboard](./docs/ORCHESTRATION.md).
 
-# DOCUMENTATION
+## Documentation
 OPTIMUS is based on TagUI for RPA automation.  Almost all of TagUI's features are ported and available in Optimus.  And some have also been enhanced.
 - As many of OPTIMUS core RPA functionality is based on TagUI, a good reference on the core RPA functionality is available from the TagUI official sites, in particular:
   - [Official TagUI site](https://aisingapore.org/tagui/) and [the python version of TagUI](https://github.com/tebelorg/RPA-Python)
