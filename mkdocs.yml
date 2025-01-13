@@ -1,5 +1,11 @@
 site_name: Optimus Documentation
 site_url: https://rayoh.github.io/optimus-documentation/
+nav:
+  - Home: index.md
+  - Install: installation.md
+  - Usage: libraries.md
+  - Blog:
+     - blog/index.md
 theme:
   name: material
   features:
