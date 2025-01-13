@@ -2,7 +2,7 @@ site_name: Optimus Documentation
 site_url: https://rayoh.github.io/optimus-documentation/
 nav:
   - Home: index.md
-  - Install: INSTALLATION.MD
+  - Install: install.md
   - Usage:
      - LIBRARIES.md
   - Blog:
