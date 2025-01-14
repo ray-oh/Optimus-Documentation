@@ -154,8 +154,10 @@ OPTIMUS is based on TagUI for RPA automation.  Almost all of TagUI's features ar
 
 ## References to other libraries used by OPTIMUS:
 OPTIMUS natively leverages many other python packages for additional features, including:  
+
 | Library | Description | Notes |
 |----------|----------|----------|
+| [Jupyter](https://pypi.org/project/jupyter/) | Native support for Jupyter Notebooks |  |
 | [Jupyter](https://pypi.org/project/jupyter/) | Native support for Jupyter Notebooks | <ul><li>[Installing Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html)</li><li>[Setup Jupyter to use installed virtual env](https://janakiev.com/blog/jupyter-virtual-envs/)</li><li>pip install ipykernel (included in installation libraries)</li><li>python -m ipykernel --name=myenv (Run this command in venv. Replace myenv with any name for kernel in Jupyter.)</li><li>jupyter kernelspec uninstall myenv (to remove the virtual env)</li></ul> |
 | [Papermill](https://netflixtechblog.com/scheduling-notebooks-348e6c14cfd6) | Parameterization and automation of Jupyter Notebooks | <ul><li> ... </li></ul> |
 | [scrapbook](https://github.com/nteract/scrapbook) | Persist and recall data and visual content in Jupyter notebook | <ul><li>[Building jupyter notebook workflows with scrapbook](https://www.wrighters.io/building-jupyter-notebook-workflows-with-scrapbook/)</li></ul> |
