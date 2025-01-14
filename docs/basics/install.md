@@ -1,3 +1,50 @@
+# INSTALLATION
+Get the latest release of OPTIMUS from the [installation repository](https://github.com/ray-oh/Optimus-Installation/releases).  
+Install from zipped package file
+- Requires: `install.bat` and a `optimus_package*.zip` file.
+- optimus_package is in continuous release and new releases are versioned in YYYYMMDD format.
+It is advisable you use the latest version available which should be in the *installation* folder.  Check the release notes on what is included in the version.
+- Each new release can also be installed over a previous release as an upgrade.  
+Normally, an upgrade installation will not remove existing user files.  But it may overwrite existing scripts files with same name.
+Backup your scripts folder to avoid problems.
+- Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
+
+### PROGRAM TECHNICAL INFORMATION
+Pre-requisites:
+- Windows 10 or Windows 10 Enterprise Server.
+> OPTIMUS currently does not have a cloud enabled service option.  But it is possible deploy OPTIMUS on a cloud virtual machine to run the automation in unattended mode.
+>- It is also possible to federate an automation task across multiple deployments of OPTIMUS using OneDrive Sync Client or a shared network drive (if running within an enterprise network) to share data, status, and scripts.  
+>- The current release of OPTIMUS does not provide this capability out of the box and requires some setup to achieve the federation.  Future releases may make this easier by leveraging the cloud enabled capabilities of Prefect workflow.  
+>***Typical cloud deployment architecture***
+>![Typical cloud deployment architecture](https://user-images.githubusercontent.com/115925194/210483008-d9d9687f-2602-4ded-bb3d-90d1c8cce8b4.png)
+
+- Python
+> Version 3.10.9 (or any version < 3.11 and > 3.9) is the recommended ?version for use with OPTIMUS for compatibility with current libraries.   
+>- [Download Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
+> For future release, we will keep the library list updated to make it compatible with latest python release or anaconda package.
+>- You can [follow this guide](https://docs.jupyter.org/en/latest/install/notebook-classic.html) for installing Jupyter separately from Python.  In future release, Jupyter Notebook will be included in the default installation package.  
+
+All other program libraries will be installed automatically by the installation package, including:
+- Autobot (RPA component) - based on TagUI and various addon python packages
+- Prefect (workflow orchestration) - full fledged orchestration package for dataflow automation.
+
+### RELEASE NOTES:
+
+20220710 - Optimus 1.1.
+        Stable release.
+        Package and installation scripts.
+        Separate autobot and prefect installation folders.
+        Separate scripts folder.
+
+20221006 - Stable release. New features: Installation scripts and package updates. Scripts (user files) folders separated from Autobot program folder.
+
+20221018 - Updated installation scripts. Added [python-minifier](https://pypi.org/project/python-minifier/) [github](https://dflook.github.io/python-minifier/installation.html).
+
+#### Installation issues
+- [SQLite ‘no such table: json_each’](https://github.com/PrefectHQ/prefect/issues/5970) - potential issue with python / SQLite version.  Ensure python version 3.9 or 3.10 is used.  
+
+
+
 # Intallation
 2 methods to install and use optimus RPA:
 1. Git clone this repo

@@ -2,18 +2,40 @@ site_name: Optimus Documentation
 site_url: https://rayoh.github.io/optimus-documentation/
 nav:
   - Home: index.md
-  - Start: quickstart.md
-  - Basics:
+  - Getting Started:
      - 'Installation': basics/install.md
-     - 'Launcher': basics/launcher.md
-     - 'Language Syntax': basics/language.md
+     - 'Quick Start Guide': quickstart.md
+     - 'Configuration': quickstart.md 
+  - User Interface:
+     - 'Excel Front End': basics/launcher.md
+     - 'Navigation': basics/launcher.md
+  - Creating Automation Flows:
+     - 'Basic Concepts': basics/language.md
+     - 'Using Templates': basics/language.md
+  - Advanced Features:
      - 'Orchestration': basics/orchestration.md
-     - 'Libraries': basics/libraries.md
-  - Advance:
-     - 'RPA': advance/RPA.md
+     - 'Python and Jupyter Notebooks': basics/libraries.md
+     - 'Pandas Integration': others/pandas.md
      - 'Scaling': advance/scaling.md     
+     - 'AI agents': ai.md  
+     - 'Power BI Integration': powerbi.md  
+     - 'Email Integration': email.md  
+  - Security and Data Management:
+     - 'Security Features': basics/orchestration.md
+     - 'Data Storage': others/onedrive.md
+  - Troubleshooting and FAQs:
+     - 'Common Issues': basics/libraries.md
+     - 'FAQs': basics/libraries.md
+  - Examples and Use Cases:
+     - 'Sample Projects': basics/libraries.md
+     - 'Industry Use Cases': usecases.md
+  - Community and Support:
+     - 'Community Forums': basics/libraries.md
+     - 'Support': basics/libraries.md
   - Others:
-     - 'One Drive': others/onedrive.md
+     - 'Glossary': advance/RPA.md
+     - 'References': advance/RPA.md
+
 theme:
   name: material
   features:

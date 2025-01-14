@@ -1,3 +1,51 @@
+# Getting Started  
+## Installation
+Step-by-step guide to installing OPTIMUS RPA.    
+## Quick Start Guide  
+A simple example to get users up and running quickly.  
+### Demo of OPTIMUS RPA  
+![logo](https://user-images.githubusercontent.com/115925194/210501100-910d4f94-10cd-428a-980a-c2984a7ed739.png)  
+Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
+Action was defined by less than 10 steps of actions defined in following Excel script:  
+![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
+This Excel script demonstrates a few key features and versatility of the OPTIMUS automation language:  
+1. **keyword-driven**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.  
+2. **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
+3. **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
+4. **variables and tables**: rich user defined parameters to support complex automation flows.
+5. **extensibility**:  combine OPTIMUS commands with Excel formulas and macros for more complex actions. Or extend OPTIMUS commands with user defined libraries.  
+The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
+
+## Usage
+- Use `runRPA.bat` to launch RPA program.  Requires to specify an Excel script file.
+- Example with Excel script file sample.xlsm :   >> `runRPA -f sample`  
+- Sample script files "sample" available to test various RPA functionality
+- All excel script files are to be placed in `\scripts`
+    And they can include RPA images (for Visual automation of your desktop and websites)
+
+- To launch the Prefect workflow engine, run startOrion.bat to launch the orion workflow server in background.
+  - And open the [Prefect dashboard](http://127.0.0.1:4200) in your browser
+  - Refer to the documentation here for more details on [managing automation flows and deployments in the workflow dashboard](./docs/ORCHESTRATION.md).
+
+## Documentation
+### OPTIMUS Studio
+OPTIMUS Studio is a GUI front end for operation of OPTIMUS RPA.  
+![Optimus RPA GUI](https://github.com/user-attachments/assets/8d6571ea-bee5-4a8b-8857-da885df14948)  
+Some of the cool features include:  
+1. Run automation scripts - with support for interactive and record mode, that allows recording of automation steps.  
+2. Recording - video of automation run.
+3. Notifications - via Telegram.
+4. Remote services - launch automation flows on your robot remotely via Telegram.
+5. Quick Patch - to update OPTIMUS with latest functionality and release.  
+Refer here for details on use of OPTIMUS Studio.  
+
+
+## Configuration  
+Instructions on configuring the software for first-time use.  
+
+
+
+
 # Quick Usage Guide
 Assumes that your computer has already been installed and setup with Optimus.
 Follow the usage guide below on how to use Optimus RPA.
