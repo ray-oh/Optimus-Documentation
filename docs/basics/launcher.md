@@ -1,16 +1,19 @@
 # OPTIMUS RPA Launcher
 GUI for launching OPTIMUS.  And also settings management.
 Smplifies the management of command lines actions for users.
+![Main screen](https://github.com/user-attachments/assets/5d0d3ae3-ddea-48b8-9113-951a451fc1f5)
+
 
 Some key features:
 - OPTIMUS CORE
   - `Run Script` - RUN/EDIT/DEPLOY automation script with debug, log, LIVE/interactive mode and other settings
-    ![image](https://github.com/user-attachments/assets/d04f07e8-f7e1-448c-ac77-92a7856fda56)
-    ![image](https://github.com/user-attachments/assets/36b3a549-e4b2-430d-82c1-2f11000ae471)
-    ![image](https://github.com/user-attachments/assets/c80f2910-78f5-47ce-8e78-7987ce271f5c)  
+  - ![Run Script](https://github.com/user-attachments/assets/5b4c879b-9415-4132-8ff9-f170e398d4db)
+  - ![Interactive Mode](https://github.com/user-attachments/assets/166ee3c2-76f6-4651-87b1-ab50604a699a)
+  - `OPTIMUS Command Builder`: Helps input of OPTIMUS keyword actions  
+  - ![Optimus Command Entry Aid](https://github.com/user-attachments/assets/834bd641-5a19-4d82-8fb8-1dccf195d0e6)
   - Jupyter Notebook
-  - `Studio`  
-    ![image](https://github.com/user-attachments/assets/1965b4b1-5e77-4463-b0f7-a21607f76623)  
+  - `Studio`: Look up keywords and usage
+    ![Studio](https://github.com/user-attachments/assets/c686ad39-9d18-4f3b-a190-cdf5912f45df)
   - Quit VM
   - Close
 - SETTINGS
