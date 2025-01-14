@@ -35,8 +35,8 @@ For help on how to use runRPA utility: `runRPA -help` or `runRPA -h`
 ![runRPA help](https://github.com/ray-oh/Optimus/assets/115925194/b381cde0-4ec8-491e-b809-c7faf63bc127)
 
 ### Outputs from the execution of RPA script
-Each step of the script that is executed is displayed in the output for reference.
-![Standard script run log](https://github.com/ray-oh/Optimus/assets/115925194/5d41acbb-1c68-4d90-8746-782f2417f56e)
+Each step of the script that is executed is displayed in the output for reference.  
+![Standard script run log](https://github.com/user-attachments/assets/43c06c81-c6e5-490b-a7bd-38e97dbf9538)  
 
 Additional DEBUG details in the output can be shown by activating `D:\Optimus\autobot\setLogLevelDEBUG.bat`
 ![Script run log with DEBUG info](https://github.com/ray-oh/Optimus/assets/115925194/1d046b31-6719-4b99-a0da-d9cec6ed68ef)
