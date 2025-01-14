@@ -55,7 +55,7 @@ Other example use cases:
 
 Refer to the DOCUMENTATION section below for further technical information on the solution.  
 
-## INSTALLATION
+## Installation
 Get the latest release of OPTIMUS from the [installation repository](https://github.com/ray-oh/Optimus-Installation/releases).  
 Install from zipped package file
 - Requires: `install.bat` and a `optimus_package*.zip` file.
@@ -66,7 +66,7 @@ Normally, an upgrade installation will not remove existing user files.  But it m
 Backup your scripts folder to avoid problems.
 - Click here for the latest stable [installation package](./installation).  And run the installation batch file with the package directly in the root directory of the folder where you wish to install OPTIMUS.  We recommend to keep the name of the program folder as Optimus.  
 
-### PROGRAM TECHNICAL INFORMATION
+### Technical Requirements
 Pre-requisites:
 - Windows 10 or Windows 10 Enterprise Server.
 > OPTIMUS currently does not have a cloud enabled service option.  But it is possible deploy OPTIMUS on a cloud virtual machine to run the automation in unattended mode.
@@ -85,7 +85,7 @@ All other program libraries will be installed automatically by the installation 
 - Autobot (RPA component) - based on TagUI and various addon python packages
 - Prefect (workflow orchestration) - full fledged orchestration package for dataflow automation.
 
-### RELEASE NOTES:
+### Release Notes
 
 20220710 - Optimus 1.1.
         Stable release.
@@ -124,9 +124,9 @@ Some of the cool features include:
 Refer here for details on use of OPTIMUS Studio.  
 
 ### Library of Automation Commands
-| Library | Description | Commands |
+| Library | Description | Command Keywords |
 |----------|----------|----------|
-| Studio | GUI for OPTIMUS | Row 1, Col 3 |
+| Studio | GUI for OPTIMUS | Launch and Manage Optimus actions |
 | BuiltIn | Standard library with command commands | rem, print, if, exit, exitError, raiseError, checkVariable, set|
 | Browser_playwright | Microsoft Playwright | click, rclick, hover, present, exist, closeRPA, url, initializeRPA, wait for url, wait |
 | Browser_tagui | TagUI support | click, rclick, hover, present, exist, closeRPA, url, title, select, snap, telegram, download, upload |
@@ -134,25 +134,17 @@ Refer here for details on use of OPTIMUS Studio.
 | Flows | Flow processing logic | iterate, arguments, runModule, codeList |
 | Email_Exchange | Email processing | email, waitEmailComplete, refreshMail |
 | LibraryTemplate | Template for user defined libraries |  |
-
-
-
-DataFrame
-
-Excel
-FileSystem
-Formulas
-Github
-Image
-
-PDF
-Prefect
-
-Table
-Vault
-Windows
-
-
+| DataFrame | DataFrame manipulation | dropNRowsExcel, DFpromoteHeader, DFsaveToExcel, DFreadExcel, DFsort, DFdropDuplicates, DFconcatenate, DFcreate |
+| Excel | Excel processing | mergeFiles, refreshExcel |
+| FileSystem | File system actions | copyFile, waitFile, moveFile, makeDir, removeFile, renameRecentDownload, touchFile |
+| Formulas | Custom formulas called by RPA {{@formula(arg)}} | fileModifiedDate, fileIsRecent, fileExist |
+| Github | Github functions | github_repo_folder_content_files, checkOptimusReleases |
+| Image | Image processing | cropImages, resize, start_recording, pause_recording, resume_recording, stop_recording |
+| PDF | PDF processing | createPDF, addContentPDF |
+| Prefect | Prefect orchestration functions | list_flow_runs_with_state, return_flow_from_run_id, delete_flow_runs, query_flow_runs |
+| Table | Template for user defined libraries |  |
+| Vault | Password management | get_password |
+| Windows | Manage external programs, windows desktop | runExcelMacro, runPowerShellScript, runBatchScript, triggerRPAScript, openProgram, keyboard_pwa, focusWindow, runOptimus, killOptimus |
 
 OPTIMUS is based on TagUI for RPA automation.  Almost all of TagUI's features are ported and available in Optimus.  And some have also been enhanced.
 - As many of OPTIMUS core RPA functionality is based on TagUI, a good reference on the core RPA functionality is available from the TagUI official sites, in particular:
@@ -161,6 +153,24 @@ OPTIMUS is based on TagUI for RPA automation.  Almost all of TagUI's features ar
   > TagUI by design does not deploy or save any user data on the cloud.  Passwords or credentials are not saved in the scripts, but cached in the browser or secret files on the user's local computer.  
 
 ## References to other libraries used by OPTIMUS:
+OPTIMUS natively leverages many other python packages for additional features, including:  
+| Library | Description | Notes |
+|----------|----------|----------|
+| [Jupyter](https://pypi.org/project/jupyter/) | Native support for Jupyter Notebooks | <ul><li>[Installing Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html)</li><li>[Setup Jupyter to use installed virtual env](https://janakiev.com/blog/jupyter-virtual-envs/)</li><li>pip install ipykernel (included in installation libraries)</li><li>python -m ipykernel --name=myenv (Run this command in venv. Replace myenv with any name for kernel in Jupyter.)</li><li>jupyter kernelspec uninstall myenv (to remove the virtual env)</li></ul> |
+| [Papermill](https://netflixtechblog.com/scheduling-notebooks-348e6c14cfd6) | Parameterization and automation of Jupyter Notebooks | <ul><li> ... </li></ul> |
+| [scrapbook](https://github.com/nteract/scrapbook) | Persist and recall data and visual content in Jupyter notebook | <ul><li>[Building jupyter notebook workflows with scrapbook](https://www.wrighters.io/building-jupyter-notebook-workflows-with-scrapbook/)</li></ul> |
+| [Prefect](https://www.prefect.io/opensource/) | Orchestration workflow engine | <ul><li>Prefect is chosen over other orhestration tools as the workflow engine.  [Comparison of Prefect vs Airbnb's Airflow and Spotify's Luigi](https://medium.datadriveninvestor.com/the-best-automation-workflow-management-tool-airbnb-airflow-vs-spotify-luigi-5f4c9832e9fd)</li></ul> |
+| [PyPDF4](https://pypi.org/project/PyPDF4/) | for PDF merging, splitting, cropping, encryption | <ul><li> ... </li></ul> |
+| [Pandas](https://pypi.org/project/pandas/) | for data analysis | <ul><li> ... </li></ul> |
+| [Matplotlib](https://pypi.org/project/matplotlib/) | comprehensive library for creating static, animated, and interactive visualizations in Python | <ul><li> ... </li></ul> |
+| [Pillow](https://pypi.org/project/Pillow/) | for image processing | <ul><li> ... </li></ul> |
+| [dataframe-image](https://pypi.org/project/dataframe-image/) / [Github](https://github.com/dexplo/dataframe_image) | to export dataframe output as image files | <ul><li>[HTML2Image](https://pypi.org/project/html2image/) / [Github](https://github.com/vgalin/html2image) - alternative.  Also relies on [chrome browser application](https://www.bleepingcomputer.com/news/software/chrome-and-firefox-can-take-screenshots-of-sites-from-the-command-line/)</li></ul> |
+| [Visualize and save full dataframes as images](https://randomds.com/2021/12/23/visualize-and-save-full-pandas-dataframes-as-images/) | Native support for Jupyter Notebooks | <ul><li> ... </li></ul> |
+| [IMGKit](https://pypi.org/project/imgkit/) | Native support for Jupyter Notebooks | <ul><li> ... </li></ul> |
+| [xlwings](https://www.xlwings.org/) | for Excel automation | <ul><li> ... </li></ul> |
+| Others | it also leverages common windows COM components for Outlook integration, OneDrive Sync Client for OneDrive / Sharepoint / Teams integration | <ul><li> ... </li></ul> |
+
+
 OPTIMUS natively leverages many other python packages for additional features, including:
 - [Jupyter](https://pypi.org/project/jupyter/): Native support for Jupyter Notebooks  
   - [Installing Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html)  
@@ -188,7 +198,7 @@ There are some on-going enhancements of OPTIMUS that have yet to be fully incorp
 - integrate [data exploration tools like mitos, DTale, Lux](https://github.com/ray-oh/Optimus/blob/master/docs/DATA_EXPLORATION.md).  These are tools that simplify working with Pandas by offering a GUI front end.  
 - components that allow further [scaling of the solution to handle big data e.g > 10TB without resorting to Spark](https://github.com/ray-oh/Optimus/blob/master/docs/SCALING.md)  
 
-## CLONING REPO, CONTRIBUTION AND LICENSE
+## Cloning Repo, Contribution and License
 
 ### Clone git repository
 
@@ -218,5 +228,5 @@ Before removing any bug, or adding new contributions please do the following: **
 
 Licensed under the [BSD 3-Clause License](LICENSE) 
 
-## CONTACT
+## Contact
 Raymond Oh - for reporting of bugs, questions, requests etc
