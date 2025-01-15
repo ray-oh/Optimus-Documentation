@@ -1,3 +1,33 @@
+# Installation  
+
+Step-by-step guide to installing OPTIMUS RPA.   
+
+## System Requirements  
+
+OPTIMUS has been tested and validated to work under the following environments.
+
+Pre-requisites:  
+- **Windows**. Windows 10 or Windows 10 Enterprise Server.  
+- **Python**.  Version 3.10.9 (or any version < 3.11 and > 3.9) is the recommended for compatibility with current libraries used by OPTIMUS.  
+- **Cloud drive**.  OPTIMUS currently does not have a cloud enabled service option.  But it is possible deploy OPTIMUS on a cloud virtual machine to run the automation in unattended mode.  It is possible to federate an automation task across multiple deployments of OPTIMUS using OneDrive Sync Client or a shared network drive (if running within an enterprise network) to share data, status, and scripts.  Refer to configuration section for details on how to install such a setup.  
+- **Other program libraries**.  Will be installed automatically by the installation package, including:
+    - **Autobot (RPA component)** - designed to work with TagUI and Microsoft Playwright.  
+    - **Microsoft Playwright** or **TagUI** - will be installed automatically by the installation program.  
+    - **Prefect (workflow orchestration)** - full fledged orchestration package for dataflow automation.  The on-premise version of Prefect is installed by OPTIMUS.  The current release of OPTIMUS does not provide capability out of the box to support federation of robots across the cloud.  Future releases may make this easier by leveraging the cloud enabled capabilities of Prefect workflow.  
+>***Typical cloud deployment architecture***
+>![Typical cloud deployment architecture](https://user-images.githubusercontent.com/115925194/210483008-d9d9687f-2602-4ded-bb3d-90d1c8cce8b4.png)
+
+- Python
+> Version 3.10.9 (or any version < 3.11 and > 3.9) is the recommended ?version for use with OPTIMUS for compatibility with current libraries.   
+>- [Download Python 3.10.9](https://www.python.org/downloads/release/python-3109/)
+> For future release, we will keep the library list updated to make it compatible with latest python release or anaconda package.
+>- You can [follow this guide](https://docs.jupyter.org/en/latest/install/notebook-classic.html) for installing Jupyter separately from Python.  In future release, Jupyter Notebook will be included in the default installation package.  
+
+
+
+
+
+
 # INSTALLATION
 Get the latest release of OPTIMUS from the [installation repository](https://github.com/ray-oh/Optimus-Installation/releases).  
 Install from zipped package file
