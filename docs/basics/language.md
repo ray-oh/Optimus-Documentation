@@ -29,7 +29,7 @@ Below is a description of the purpose of each of the header fields:
     - `URL` could be the name of a user defined variable to contain various URL key value pairs. You could have a URL for `Google website`, `Yahoo website`, `LinkedIn website`.  The URL of each of these types of websites would be stored in the `Value` column.  And `Google website`, `Yahoo website`, `LinedIn website` would be defined in the `Key` column.  
     - `RPABROWSER` is a special variable in OPTIMUS (with Object name `constants`) to define what type of automation browser engine to use. `1` for Microsoft Playwright (default setting). `0` for TagUI (legacy support).  
 5. **Comments** are not processed by OPTIMUS.  Used to annotate or document the step.
-[insert picture of excel script here]
+![excel script example](https://github.com/user-attachments/assets/80fd673e-28ee-452d-890d-63ee64574fe1)
 
 ### Keyword actions, Automation Steps and Libraries  
 OPTIMUS provides many pre-built keyword actions and also extended keyword actions from user defined libraries and modules.  
@@ -119,10 +119,10 @@ How to use and customize Excel templates for automation.
 ## OPTIMUS RPA Studio
 Application to help launch and edit scripts.  Also provides features like: recording, debugging, inspect browser locators.  
 - Shortcut:  
-![image](https://github.com/user-attachments/assets/f543b2f4-4608-433a-981a-25421b1d9ff4)  
-  
+![launcher icon](https://github.com/user-attachments/assets/82026145-6ede-4928-92c3-9283c6122160)  
+
 Optimus RPA menu:  
-![image](https://github.com/user-attachments/assets/7a07f6fe-7578-4bb5-9be1-0ee015a52a99)
+![menu](https://github.com/user-attachments/assets/0c759047-658c-4259-8454-303274445703)  
   
 Using OPTIMUS RPA studio.  Typical steps:
 - Select script
@@ -131,8 +131,8 @@ Using OPTIMUS RPA studio.  Typical steps:
 - Log - special beta logging
 - Break - if word matches action
 - Run script  
-  
-![image](https://github.com/user-attachments/assets/4e5aafc0-1f29-4735-b9cf-17569953f3c8)
+
+![Run Script](https://github.com/user-attachments/assets/25be300f-8022-41f6-9233-ccd9a096a5b8)  
   
 Debug / Interactive Run mode:  
 ![image](https://github.com/user-attachments/assets/e361af82-3b23-420f-a33c-6313e3e5cdf3)  
