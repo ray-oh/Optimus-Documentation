@@ -49,11 +49,11 @@ Navigation: How to navigate through the different sections of the software.
 4. Creating Automation Flows
 Basic Concepts: Introduction to automation flows and key concepts.
 Using Templates: How to use and customize Excel templates for automation.
-TagUI Integration: Explanation of how to leverage TagUI within OPTIMUS.
 5. Advanced Features
 Prefect Workflow Engine: Detailed guide on using the Prefect workflow engine.
 Python Integration: How to integrate and use Python scripts within OPTIMUS.
 Jupyter Notebooks: Instructions for using Jupyter Notebooks with OPTIMUS.
+TagUI Integration: Explanation of how to leverage TagUI within OPTIMUS.
 6. Security and Data Management
 Security Features: Overview of the security features and best practices.
 Data Storage: How to manage and store data securely.
