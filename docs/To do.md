@@ -13,3 +13,9 @@ browser.py and browser_playwright.py
   - function documentation
  
   
+### License
+
+Licensed under the [BSD 3-Clause License](LICENSE) 
+
+## Contact
+Raymond Oh - for reporting of bugs, questions, requests etc
