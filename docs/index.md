@@ -34,53 +34,53 @@ Including support for Jupyter Notebooks for automating data analysis and machine
 Guide for different to documentation for various audience:  
 ***Data analysts and Business users***  
 
-2. Getting Started  
-  - Installation: Step-by-step guide to installing OPTIMUS RPA.  
-  - Quick Start Guide: A simple example to get users up and running quickly.  
-  - Configuration: Instructions on configuring the software for first-time use.  
+2. **Getting Started**  
+    - Installation: Step-by-step guide to installing OPTIMUS RPA.  
+    - Quick Start Guide: A simple example to get users up and running quickly.  
+    - Configuration: Instructions on configuring the software for first-time use.  
 
-3. User Interface  
-  - Excel Front End: Detailed explanation of the Excel interface and its components.  
-  - Navigation: How to navigate through the different sections of the software.  
+3. **User Interface**  
+    - Excel Front End: Detailed explanation of the Excel interface and its components.  
+    - Navigation: How to navigate through the different sections of the software.  
 
-4. Creating Automation Flows  
-  - Basic Concepts: Introduction to automation flows and key concepts.  
-  - Using Templates: How to use and customize Excel templates for automation.  
-  - TagUI Integration: Explanation of how to leverage TagUI within OPTIMUS.  
+4. **Creating Automation Flows**  
+    - Basic Concepts: Introduction to automation flows and key concepts.  
+    - Using Templates: How to use and customize Excel templates for automation.  
+    - TagUI Integration: Explanation of how to leverage TagUI within OPTIMUS.  
 
-8. Examples and Use Cases  
-  - Sample Projects: Detailed examples of automation projects.  
-  - Industry Use Cases: How different industries can benefit from using OPTIMUS.  
+8. **Examples and Use Cases**  
+    - Sample Projects: Detailed examples of automation projects.  
+    - Industry Use Cases: How different industries can benefit from using OPTIMUS.  
 
-10. Appendices  
-  - Glossary: Definitions of key terms used in the documentation.  
-  - References: Additional resources and references for further reading.  
+10. **Appendices**  
+    - Glossary: Definitions of key terms used in the documentation.  
+    - References: Additional resources and references for further reading.  
 
 ***Automation Engineers and Developers***  
 
-5. Advanced Features  
-  - Prefect Workflow Engine: Detailed guide on using the Prefect workflow engine.  
-  - Python Integration: How to integrate and use Python scripts within OPTIMUS.  
-  - Jupyter Notebooks: Instructions for using Jupyter Notebooks with OPTIMUS.  
+5. **Advanced Features**  
+    - Prefect Workflow Engine: Detailed guide on using the Prefect workflow engine.  
+    - Python Integration: How to integrate and use Python scripts within OPTIMUS.  
+    - Jupyter Notebooks: Instructions for using Jupyter Notebooks with OPTIMUS.  
 
-6. Security and Data Management  
-  - Security Features: Overview of the security features and best practices.  
-  - Data Storage: How to manage and store data securely.  
+6. **Security and Data Management**  
+    - Security Features: Overview of the security features and best practices.  
+    - Data Storage: How to manage and store data securely.  
 
-7. Troubleshooting and FAQs  
-  - Common Issues: List of common issues and their solutions.  
-  - FAQs: Frequently asked questions and answers.  
+7. **Troubleshooting and FAQs**  
+    - Common Issues: List of common issues and their solutions.  
+    - FAQs: Frequently asked questions and answers.  
 
-9. Community and Support  
-  - Community Forums: Links to community forums and discussion groups.  
-  - Support: How to get help and support from the OPTIMUS team.  
+9. **Community and Support**  
+    - Community Forums: Links to community forums and discussion groups.  
+    - Support: How to get help and support from the OPTIMUS team.  
 
 ## Prerequisites  
 Required knowledge or tools before using OPTIMUS RPA:  
 
 - Assumes you are comfortable using Excel.  And have Excel installed.  
-- For full operation of OPTIMUS in an enterprise context, you may need to have One Drive installed.  
 - OPTIMUS RPA currently works for windows.  It has not been setup to work for Linux or Mac.  Although technically, it is possible to do so.  
 There may be some libraries used by OPTIMUS that will break in Linux or Mac. And the installation process is currently developed for windows only.  
+- For full operation of OPTIMUS in an enterprise context, you may need One Drive or Google Drive installed to enable transfer of files between your computer and the one running OPTIMUS.  
 
-For more details on the system requirements, you can refer to the [install documentation](basics/install.md).  
+For more details on the system requirements and the various setup configurations, you can refer to the [install documentation](basics/install.md).  
