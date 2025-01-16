@@ -1,19 +1,28 @@
 # Getting Started  
+
 ## Installation
+
 Step-by-step guide to installing OPTIMUS RPA.    
+
 ## Quick Start Guide  
+
 A simple example to get users up and running quickly.  
+
 ### Demo of OPTIMUS RPA  
+
 ![logo](https://user-images.githubusercontent.com/115925194/210501100-910d4f94-10cd-428a-980a-c2984a7ed739.png)  
+
 Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
 Action was defined by less than 10 steps of actions defined in following Excel script:  
 ![Optimus Excel script](https://github.com/user-attachments/assets/977200e5-bb31-4d04-9d12-d8955d15f1a0)
 This Excel script demonstrates a few key features and versatility of the OPTIMUS automation language:  
+
 1. **keyword-driven**: intuitive key words to perform various automation actions e.g. url (to go to specified url), click, download etc.  
 2. **modular actions**: define your own complex blocks of action comprising of a list of automation steps e.g. fill form.  
 3. **iteration and loops**: support more complex automation flows like performing a block of actions for every item in the table.  
 4. **variables and tables**: rich user defined parameters to support complex automation flows.
 5. **extensibility**:  combine OPTIMUS commands with Excel formulas and macros for more complex actions. Or extend OPTIMUS commands with user defined libraries.  
+
 The automation language used by OPTIMUS is really **easy for beginners** to learn to develop your own flows.  But at the same time, it is rich enough to support sophisticated automation flows.  And has various modular constructs to support reuse and scalability for larger automation projects.  
 
 ## Usage
