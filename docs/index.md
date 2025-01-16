@@ -1,4 +1,5 @@
 # About OPTIMUS  
+
 Optimus is an RPA (Robotic Process Automation) solution designed with an **Excel front end** for creation of automation flow steps.  
 Making it accessible for the typical data analyst who is comfortable using Excel, but not very technical savy.  
 
@@ -11,6 +12,7 @@ Optimus stands out for its user-friendly approach while maintaining robust featu
 5. **Enterprise-Level Security**: Secure by design, running on-premise and managing passwords locally, ensuring no sensitive data is sent to the cloud.  
 
 ## Key Features  
+
 OPTIMUS differentiates itself from other RPA solutions including market leading commercial packages like UiPath in terms of its ease of use and extensibility. But at the sametime, it does not compromise on features and capabilities.  
 
 OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
@@ -31,7 +33,9 @@ And finally, as OPTIMUS is developed in Python - *the language for data analytic
 Including support for Jupyter Notebooks for automating data analysis and machine learning projects. You can directly call and run Jupyter Notebook scripts.  And you can easily parameterize the Jupyter Notebook scripts to run under various conditions.  
 
 ## Audience
+
 Guide for different to documentation for various audience:  
+
 ***Data analysts and Business users***  
 
 2. **Getting Started**  
@@ -76,6 +80,7 @@ Guide for different to documentation for various audience:
     - Support: How to get help and support from the OPTIMUS team.  
 
 ## Prerequisites  
+
 Required knowledge or tools before using OPTIMUS RPA:  
 
 - Assumes you are comfortable using Excel.  And have Excel installed.  
