@@ -11,7 +11,7 @@ nav:
      - 'Excel Front End': user-interface/launcher.md
   - Creating Automation Flows:
      - 'Basic Concepts': basics/language.md
-     - 'Using Templates': basics/language.md
+     - 'Using Templates': basics/templates.md
      - 'Libraries': basics/libraries.md
   - Advanced Features:
      - 'Orchestration': advance/orchestration.md
@@ -21,10 +21,9 @@ nav:
      - 'AI agents': advance/ai.md  
      - 'Power BI Integration': advance/powerbi.md  
      - 'Outlook Email Integration': advance/email.md  
-  - Security and Data Management:
-     - 'Security Features': basics/orchestration.md
-     - 'Data Storage': others/onedrive.md
   - Others:
+     - 'Security': others/security.md
+     - 'Data Management': others/onedrive.md
      - 'Troubleshooting and FAQs': others/bugs.md
      - 'Packaging Installation': developers/install_packaging.md
      - 'Common Issues': todo.md
@@ -32,7 +31,7 @@ nav:
      - 'Community Forums and Support': todo.md
      - 'Glossary': todo.md
      - 'References': SCRAPBOOK.md
-     - 'MK Docs Guide': mkdocs_guide.md     
+     - 'MK Docs Guide': others/mkdocs_guide.md     
 
 theme:
   name: material
