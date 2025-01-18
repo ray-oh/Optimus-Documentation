@@ -25,7 +25,18 @@ OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like **
 4. **Reporting and Logs**: generates detailed reports and logs to help analyze automation results and debug issues effectively.  
 5. **Enterprise Level Security**:  solution is installed locally, and user has full control on how his/her data is stored and managed.  
 
-A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](https://techbeacon.com/enterprise-it/top-5-open-source-rpa-frameworks-how-choose).  
+A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](top5rpa.md):  
+
+> TagUI is a multilayered and sophisticated tool with a rich scripting language that lets you complete complex RPA instructions. You develop each set of instructions, referred to as "flows," with TagUI's scripting language and save it in a text file with the extension ".tag." You can then execute each flow using a terminal window/command prompt.
+>
+> Each flow script can identify the following:
+>
+> - Instructions to visit a website or open an application
+> - Where to click on the screen
+> - Which content to type
+> - IF and LOOP instructions
+>
+> The richness of TagUI's scripting language makes it a favorite of our team. We can get the tool up and running quickly, scripts can be shared as .tag files to create a library, and maintaining the library of scripts is easy. TagUI is good for mid-level or advanced teams implementing RPA.
 
 The current version of OPTIMUS has been enhanced to use ***[Microsoft Playwright](https://playwright.dev/)*** as the web browser automation engine. Microsoft Playwright is a leading open-source framework designed for web browser automation and testing.  It is a modern successor to Selenium, and supports all modern browsers and automation in a number of programming languages.  With features like automatic waiting for elements and mobile web testing, Playwright takes web automation to another level of reliability and efficiency.  
 
