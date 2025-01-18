@@ -8,9 +8,13 @@ Making it accessible for the typical data analyst who is comfortable using Excel
 Optimus stands out for its user-friendly approach while maintaining robust features and extensibility:  
 
 1. **Ease of Use**: Optimus simplifies the creation of automation flows using Excel and predefined templates.  
+
 2. **TagUI and Microsoft Playwright Integration**: Choice of TagUI or Microsoft Playwright RPA engine.  Known for their rich scripting language and support for web browser automation.  
+
 3. **Prefect Workflow Engine**: Provides powerful orchestration, management, and monitoring of workflows.  
+
 4. **Python-Based**: Developed in Python, allowing access to a wide range of libraries and integration with Jupyter Notebooks.  
+
 5. **Enterprise-Level Security**: Secure by design, running on-premise and managing passwords locally, ensuring no sensitive data is sent to the cloud.  
 
 ## Key Features  
@@ -20,23 +24,27 @@ OPTIMUS differentiates itself from other RPA solutions including market leading 
 OPTIMUS RPA borrows many concepts from leading open-source RPA solutions like ***[TagUI](https://github.com/aisingapore/TagUI)*** and ***[Robot Framework](https://github.com/robotframework/robotframework)***:  
 
 1. **Keyword-Driven**: making automation scripts easy to create, readable and maintainable.  Keywords can be reused across different automation cases, enhancing efficiency.  
+
 2. **Extensibility**: supports extensions through libraries written in Python. This allows you to integrate various tools and technologies.  Apart from Python, Optimus can also run Excel macros and batch scripts.  As Optimus scripts are created using Excel, it is easy to enhance the automation flow with Excel formulas and macros.  
+
 3. **Versatile Syntax**: uses a plain text syntax, which is accessible to both technical and non-technical users. This makes it easier for teams to collaborate on automation.  
+
 4. **Reporting and Logs**: generates detailed reports and logs to help analyze automation results and debug issues effectively.  
+
 5. **Enterprise Level Security**:  solution is installed locally, and user has full control on how his/her data is stored and managed.  
 
-A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](top5rpa.md):  
+A special call out to Ken Soh who developed TagUI and inspired the creation of OPTIMUS RPA. You can check out this article by Matthew David (Digital Leader at Accenture) [comparing TagUI with other top 5 opensource RPA solutions](top5rpa.md).  
 
-> TagUI is a multilayered and sophisticated tool with a rich scripting language that lets you complete complex RPA instructions. You develop each set of instructions, referred to as "flows," with TagUI's scripting language and save it in a text file with the extension ".tag." You can then execute each flow using a terminal window/command prompt.
+> _TagUI is a multilayered and sophisticated tool with a rich scripting language that lets you complete complex RPA instructions. You develop each set of instructions, referred to as "flows," with TagUI's scripting language and save it in a text file with the extension ".tag." You can then execute each flow using a terminal window/command prompt._
 >
-> Each flow script can identify the following:
+> _Each flow script can identify the following:_
 >
-> - Instructions to visit a website or open an application
-> - Where to click on the screen
-> - Which content to type
-> - IF and LOOP instructions
+> - _Instructions to visit a website or open an application_
+> - _Where to click on the screen_
+> - _Which content to type_
+> - _IF and LOOP instructions_
 >
-> The richness of TagUI's scripting language makes it a favorite of our team. We can get the tool up and running quickly, scripts can be shared as .tag files to create a library, and maintaining the library of scripts is easy. TagUI is good for mid-level or advanced teams implementing RPA.
+> _The richness of TagUI's scripting language makes it a favorite of our team. We can get the tool up and running quickly, scripts can be shared as .tag files to create a library, and maintaining the library of scripts is easy. TagUI is good for mid-level or advanced teams implementing RPA._
 
 The current version of OPTIMUS has been enhanced to use ***[Microsoft Playwright](https://playwright.dev/)*** as the web browser automation engine. Microsoft Playwright is a leading open-source framework designed for web browser automation and testing.  It is a modern successor to Selenium, and supports all modern browsers and automation in a number of programming languages.  With features like automatic waiting for elements and mobile web testing, Playwright takes web automation to another level of reliability and efficiency.  
 

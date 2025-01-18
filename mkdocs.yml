@@ -12,29 +12,27 @@ nav:
   - Creating Automation Flows:
      - 'Basic Concepts': basics/language.md
      - 'Using Templates': basics/language.md
+     - 'Libraries': basics/libraries.md
   - Advanced Features:
-     - 'Orchestration': basics/orchestration.md
-     - 'Python and Jupyter Notebooks': basics/libraries.md
-     - 'Pandas Integration': others/pandas.md
+     - 'Orchestration': advance/orchestration.md
+     - 'Python and Jupyter Notebooks': advance/jupyternotebook.md
+     - 'Pandas Integration': advance/pandas.md
      - 'Scaling': advance/scaling.md     
-     - 'AI agents': ai.md  
-     - 'Power BI Integration': powerbi.md  
-     - 'Email Integration': email.md  
+     - 'AI agents': advance/ai.md  
+     - 'Power BI Integration': advance/powerbi.md  
+     - 'Outlook Email Integration': advance/email.md  
   - Security and Data Management:
      - 'Security Features': basics/orchestration.md
      - 'Data Storage': others/onedrive.md
-  - Troubleshooting and FAQs:
-     - 'Common Issues': basics/libraries.md
-     - 'FAQs': basics/libraries.md
-  - Examples and Use Cases:
-     - 'Sample Projects': basics/libraries.md
-     - 'Industry Use Cases': usecases.md
-  - Community and Support:
-     - 'Community Forums': basics/libraries.md
-     - 'Support': basics/libraries.md
   - Others:
-     - 'Glossary': advance/RPA.md
-     - 'References': advance/RPA.md
+     - 'Troubleshooting and FAQs': others/bugs.md
+     - 'Packaging Installation': developers/install_packaging.md
+     - 'Common Issues': todo.md
+     - 'Use Cases and Projects': others/usecases.md
+     - 'Community Forums and Support': todo.md
+     - 'Glossary': todo.md
+     - 'References': SCRAPBOOK.md
+     - 'MK Docs Guide': mkdocs_guide.md     
 
 theme:
   name: material

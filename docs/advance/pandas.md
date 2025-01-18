@@ -1,7 +1,8 @@
+# Pandas
+
 # Pandas techniques
 
 [Conditional Replace value in a column](https://stackoverflow.com/questions/21608228/conditional-replace-pandas)
-
 
 Styler.format(formatter=None, subset=None, na_rep=None, precision=None, decimal='.', thousands=None, escape=None, hyperlinks=None)
 [Format the text display value of cells.](https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.format.html)
@@ -24,7 +25,8 @@ if 'A' in df.columns: [check if a column exists in Pandas](https://stackoverflow
 [Export from pandas to_excel without row names (index)](https://stackoverflow.com/questions/22089317/export-from-pandas-to-excel-without-row-names-index)
 
 ## Date time in Python
-time.ctime() method converts a time in seconds since the epoch to a string in local time
+
+time.ctime() method converts a time in seconds since the epoch to a string in local time  
 [time.ctime() Method](https://www.geeksforgeeks.org/python-time-ctime-method/)  
 
 [get file creation and modification date/times?](https://stackoverflow.com/questions/237079/how-do-i-get-file-creation-and-modification-date-times)
@@ -34,16 +36,23 @@ time.ctime() method converts a time in seconds since the epoch to a string in lo
 ## Automation libraries
 
 [ahk Python wrapper around AHK.](https://pypi.org/project/ahk/)
+
 [Hotkeys](https://www.autohotkey.com/docs/v1/Hotkeys.htm)
+
 [Scripting Language](https://www.autohotkey.com/docs/v2/Language.htm)
+
 [Copy data to clipboard, Paste to Excel - COM or other method](https://www.autohotkey.com/boards/viewtopic.php?t=60880)
+
 [script for pasting plain text](https://www.autohotkey.com/boards/viewtopic.php?t=45048)
+
 [autohotkey alternatives](https://www.techshout.com/autohotkey-alternatives/)
 
 [Pyperclip is a cross-platform Python module for copy and paste clipboard functions](https://pypi.org/project/pyperclip/)
+
 [Copy and paste text to the clipboard with pyperclip](https://note.nkmk.me/en/python-pyperclip-usage/)
 
-# Calculating Mix
+## Calculating Mix
+
 [Percentage of total with groupby](https://stackoverflow.com/questions/23377108/pandas-percentage-of-total-with-groupby)
 
 
