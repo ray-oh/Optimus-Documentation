@@ -1,4 +1,9 @@
 # About OPTIMUS  
+
+!logo
+
+![logo](/docs/assets/images/logo.png)
+
 Optimus is an RPA (Robotic Process Automation) solution designed with an **Excel front end** for creation of automation flow steps.  
 Making it accessible for the typical data analyst who is comfortable using Excel, but not very technical savy.  
 
