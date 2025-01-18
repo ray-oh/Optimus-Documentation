@@ -3,12 +3,12 @@ site_url: https://rayoh.github.io/optimus-documentation/
 nav:
   - Home: index.md
   - Getting Started:
-     - 'Installation': basics/install.md
-     - 'Quick Start Guide': quickstart.md
-     - 'Configuration': quickstart.md 
+     - 'Installation': getting-started/install.md
+     - 'Quick Start Guide': getting-started/quickstart.md
+     - 'Configuration': getting-started/configuration.md 
   - User Interface:
-     - 'Excel Front End': basics/launcher.md
-     - 'Navigation': basics/launcher.md
+     - 'Navigation': user-interface/navigation.md
+     - 'Excel Front End': user-interface/launcher.md
   - Creating Automation Flows:
      - 'Basic Concepts': basics/language.md
      - 'Using Templates': basics/language.md

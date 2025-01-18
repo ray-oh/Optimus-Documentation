@@ -90,4 +90,4 @@ Required knowledge or tools before using OPTIMUS RPA:
 There may be some libraries used by OPTIMUS that will break in Linux or Mac. And the installation process is currently developed for windows only.  
 - For full operation of OPTIMUS in an enterprise context, you may need One Drive or Google Drive installed to enable transfer of files between your computer and the one running OPTIMUS.  
 
-For more details on the system requirements and the various setup configurations, you can refer to the [installation documentation](basics/install.md).  
+For more details on the system requirements and the various setup configurations, you can refer to the [installation documentation](getting-started/install.md).  

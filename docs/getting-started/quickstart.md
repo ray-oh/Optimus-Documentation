@@ -10,12 +10,12 @@ A simple example to get users up and running quickly.
 
 ### Demo of OPTIMUS RPA  
 
-![logo](assets/images/logo.png)  
+![logo](../assets/images/logo.png)  
 
 Here is a demo of OPTIMUS RPA completing the RPA challenge in under 10 seconds [demo video](https://www.youtube.com/watch?v=BWfCpwz76io)   
 Action was defined by less than 10 steps of actions defined in following Excel script:  
 
-![Optimus Excel script](assets/images/script-sample-rpa-challenge.png)
+![Optimus Excel script](../assets/images/script-sample-rpa-challenge.png)
 
 This Excel script demonstrates a few key features and versatility of the OPTIMUS automation language:  
 
@@ -44,7 +44,7 @@ The automation language used by OPTIMUS is really **easy for beginners** to lear
 ### OPTIMUS Studio
 
 OPTIMUS Studio is a GUI front end for operation of OPTIMUS RPA.  
-![Optimus RPA GUI](assets/images/gui-core.PNG)  
+![Optimus RPA GUI](../assets/images/gui-core.PNG)  
 
 Some of the cool features include:  
 
@@ -54,11 +54,6 @@ Some of the cool features include:
 4. Remote services - launch automation flows on your robot remotely via Telegram.
 5. Quick Patch - to update OPTIMUS with latest functionality and release.  
 Refer here for details on use of OPTIMUS Studio.  
-
-## Configuration  
-Instructions on configuring the software for first-time use.  
-
-
 
 
 # Quick Usage Guide
@@ -71,14 +66,14 @@ Follow the usage guide below on how to use Optimus RPA.
 
 Optimus is installed by default to your root directory e.g. `D:\Optimus`  
 
-![Optimus folder](assets/images/program-directory.PNG)
+![Optimus folder](../assets/images/program-directory.PNG)
 
-![Optimus program](assets/images/shortcut-optimus-rpa.PNG) is used to launch the RPA program.  
+![Optimus program](../assets/images/shortcut-optimus-rpa.PNG) is used to launch the RPA program.  
 Can also be called from command line by `runRPA.bat`.  
 
 ### Useful shortcuts
 
-![Desktop shortcuts](assets/images/gui-shortcuts.png)
+![Desktop shortcuts](../assets/images/gui-shortcuts.png)
 
 As a best practice, you can place shortcuts to frequently used Optimus programs on the desktop for easy access.  Here are some of the useful shortcuts for Optimus:  
 
@@ -97,37 +92,37 @@ Optimus automation scripts are created in Excel and do not require any programmi
 These scripts are stored in the `scripts` folder.  
 A `rpa_challenge.xlsm` script is available in the `scripts` folder for you to learn how to write Optimus automation scripts.
 
-![Scripts folder](assets/images/scripts-directory.PNG)
+![Scripts folder](../assets/images/scripts-directory.PNG)
 
 ### How to run a RPA script
 
 You can run the `rpa_challenge.xlsm` script from:  
 
-![Running a script](assets/images/gui-run-script.png)
+![Running a script](../assets/images/gui-run-script.png)
 
 Or from the command line as follows: `runRPA -f rpa_challenge`  
 
 For help on how to use runRPA utility: `runRPA -help` or `runRPA -h`
 
-![runRPA help](assets/images/runRPA-help.PNG)
+![runRPA help](../assets/images/runRPA-help.PNG)
 
 ### Outputs from the execution of RPA script
 
 Each step of the script that is executed is displayed in the output for reference.  
 
-![Standard script run log](assets/images/cli-log.PNG)  
+![Standard script run log](../assets/images/cli-log.PNG)  
 
 !!! note "Additional DEBUG details"
     Can be shown in the output by activating `D:\Optimus\autobot\setLogLevelDEBUG.bat`  
-    ![Script run log with DEBUG info](assets/images/cli-log-debug.PNG)
+    ![Script run log with DEBUG info](../assets/images/cli-log-debug.PNG)
 
 ### Monitoring automation flows
 
 All executed flows can be monitored in the `Prefect Server Dashboard`
-![Workflow dashboard](assets/images/workflow-monitor2.png)
+![Workflow dashboard](../assets/images/workflow-monitor2.png)
 
 Details of the execution logs of each flow can be drilled down from the dashboard.
-![Flow run details](assets/images/workflow-flowrun-logs.PNG)
+![Flow run details](../assets/images/workflow-flowrun-logs.PNG)
 
 ### Working with Jupyter Notebook
 
@@ -142,5 +137,5 @@ runJupyterNb: DataPreparationv3.ipynb , {"forceRun":"True","strSearch":"<strSear
 First parameter is the notebook file name.  
 And the next parameter are the parameters to be passed to the notebook in JSON format e.g.  `{key1:value1, key2:value2}`  
 
-![Launch Jupyter](assets/images/jupyter-overview.png)
+![Launch Jupyter](../assets/images/jupyter-overview.png)
 
