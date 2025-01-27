@@ -31,8 +31,14 @@ telegram: 1234567890 , Use backslash n for new line\nThis is line 2 of the messa
 !!! note "Configuring your Telegram notification"
     From your OPTIMUS program launcher, you can configure whether to activate notifications or not, and which user id to receive notifications.  
     Click menu option: **SETTINGS > NOTIFICATIONS** or from the **SETTINGS > CONFIG FILE**:  
-    - notifications.activate - True/False  
-    - notifications.id - user id  
+        - notifications.activate - True/False  
+        - notifications.id - user id  
+
+!!! note "Secure Temporary Storage"
+    OPTIMUS leverages a function in TagUI to provide secure temporary storage and sharing of files:  
+    ```
+    telegram: 1234567890 , Access confidential report at {{@storageBin('secret_agent_report.pdf', 'optional password')}}
+    ```
 
 ## Remote Bot Services
 
