@@ -21,6 +21,7 @@ nav:
      - 'AI agents': advance/ai.md  
      - 'Power BI Integration': advance/powerbi.md  
      - 'Outlook Email Integration': advance/email.md  
+     - 'Telegram Notification and Optimus Bot': advance/telegram.md  
   - Others:
      - 'Security': others/security.md
      - 'Data Management': others/onedrive.md
