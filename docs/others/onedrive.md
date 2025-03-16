@@ -83,9 +83,6 @@ Rebuilding the search index will delete the old index file and create a new one,
 Use Disk Cleanup - "cleanmgr /sageset:11" - setup a clean up setting for scheduling.  
 ![image](https://github.com/user-attachments/assets/366b2fb3-ff15-4093-94cb-4d0983a9969a)  
 ![image](https://github.com/user-attachments/assets/87c99e4d-eb0c-42b5-b4de-ea2d5a5ac264)  
-
-![image](https://github.com/ray-oh/OptimusEnterprise/assets/115925194/8ec4c3ad-8c14-4ee9-81d8-566184e2bf78)
-![image](https://github.com/ray-oh/OptimusEnterprise/assets/115925194/c19e0567-2fb9-4241-9d86-4e79b1a1155f)
 To check and analyze space in disk for further optimization, can use WizTree - a very fast disk scan and analyzer:  
 ![image](https://github.com/user-attachments/assets/f86af4d1-c5bb-4708-9698-797cebfbb8ad)  
 
