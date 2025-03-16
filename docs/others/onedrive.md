@@ -89,4 +89,18 @@ To check and analyze space in disk for further optimization, can use WizTree - a
 
 [Delete a user profile in Windows](https://learn.microsoft.com/en-us/troubleshoot/windows-server/user-profiles-and-logon/delete-user-profile)
 
-
+## Troubleshoot syncing issues  
+### Stuck on "Sync pending" status
+![image](https://github.com/user-attachments/assets/b3421bb5-33e6-4c05-8915-f742b74d53e5)  
+Experiencing issue with OneDrive where the sync status is stuck on "sync pending." A few steps you can try to resolve this issue:  
+- Check your internet connection: Ensure you have a stable internet connection. Sometimes, sync issues can be caused by intermittent connectivity.  
+- Restart OneDrive: Close OneDrive completely and then reopen it. This can sometimes resolve sync issues.  
+- Check for updates: Make sure you have the latest version of OneDrive installed. Updates often include fixes for common issues.  
+- Clear the cache: Clearing the OneDrive cache can help resolve sync problems. You can do this by navigating to the OneDrive settings and selecting the option to clear the cache.
+    - Close OneDrive: Right-click the OneDrive icon in the system tray (near the clock) and select "Close OneDrive."  
+    - Run the reset command: Press Win + R to open the Run dialog, then type cmd and press Enter to open Command Prompt. In the Command Prompt window, type the following command and press Enter:  `%localappdata%\Microsoft\OneDrive\onedrive.exe /reset`  
+    - Restart OneDrive: After the reset process completes, restart OneDrive by searching for it in the Start menu and opening the app.
+- Check file names and paths: Ensure that the files you're trying to sync don't have any special characters or long file paths, as these can sometimes cause sync issues.  
+- Re-link your account: Sometimes, unlinking and then re-linking your OneDrive account can resolve sync issues. You can do this through the OneDrive settings.  
+- Check for conflicts: Look for any files that might have sync conflicts. These are usually marked with a red X or a warning icon. Resolve these conflicts to continue syncing.  
+If none of these steps work, you might want to consider reaching out to Microsoft Support for further assistance.  
