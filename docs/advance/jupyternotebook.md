@@ -15,6 +15,7 @@ By leveraging and integrating [Papermill](https://www.wrighters.io/parameters-ju
 
 - Directly run one or multiple notebooks with different parameter values from the automation script.  This allows the user to create resusable parameterized JUPYTER NOTEBOOKS, in effect turning the notebooks into reusable data processing and automation functions.
 
+    - [Introducing papermill](https://docs.nersc.gov/jobs/workflow/papermill/#:~:text=Papermill%2C%20developed%20by%20Netflix%2C%20is,notebook%20with%20different%20input%20values.)
     - [Using papermill parameters with Jupyter Notebook](https://papermill.readthedocs.io/en/latest/usage-parameterize.html) 
 
 - The Jupyter notebooks can be written in various languages (Python, Scala, SparkSQL, and R).  You are also not limited by the installed libraries in OPTIMUS as you can setup your own virtual environments with additional python libraries and [use Jupyter with your own custom virtual environment](https://towardsdatascience.com/creating-and-using-virtual-environment-on-jupyter-notebook-with-python-db3f5afdd56a)
