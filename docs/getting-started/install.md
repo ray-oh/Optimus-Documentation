@@ -9,10 +9,16 @@ What is included in the installation:
   2. Various libraries required by OPTIMUS.  
   3. Including PREFECT orchestration / workflow, Playwright Browser Automation, Jupyter Notebook.  
 
-??? failure "***Installation issues***"
+??? failure "***Installation issues***"  
     1. [SQLite ‘no such table: json_each’](https://github.com/PrefectHQ/prefect/issues/5970) - potential issue with python / SQLite version.  Ensure python version 3.9 or 3.10 is used. Could happen if you tried to install via pip and not from installer.  
 
     2. `alembic.util.exc.CommandError: Can't locate revision identified by 'a49711513ad4'`: If you get above error - it means you have a previous version of PREFECT installed that is conflicting with the installation. And to avoid the error, you would need to delete the previous PREFECT databases and reinstall PREFECT. PREFECT database is usually installed in `%userprofile%\.prefect`.  You could remove the entire directory. And then re-install with `install.bat -o l`
+
+    3. `sqlite3.OperationalError: unable to open database file`: means that SQLAlchemy (via aiosqlite) is trying to connect to a SQLite database, but it can't find or access the file. Here are some common causes and how to fix them:  
+    - Check that the File exist. Ensure the installation of prefect is successful.  
+    - And ensure that you have proper directory permissions to operate prefect, especially the folder `%userprofile%\.prefect`.  Check your user account control settings in the control panel user accounts.
+    
+
 
 ## System Requirements  
 
